@@ -14,6 +14,8 @@ namespace MongoDBWebApi.Domain
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public ShippingAddress shippingAddress { get; set; }
+        [BsonElement("dob")]
+        public DateTime dateofTime { get; set; }
     }
 
     public class ShippingAddress
